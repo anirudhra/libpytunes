@@ -28,6 +28,7 @@ class Library:
         #self.il = plistlib.readPlist(itunesxml)  # Much better support of xml special characters
         with open(itunesxml, 'rb') as f:
             self.il = plistlib.load(f)
+            f.close()
         self.songs = {}
         self.getSongs()
 
