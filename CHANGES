@@ -16,3 +16,7 @@ Version 1.5.1
 Version 1.5.2
 -----------
 - Python 3 compatibility for the Song class, using six.
+
+Version 1.5.3
+-----------
+- Python 3 support plist. Replaced readPlist() with plistload()
