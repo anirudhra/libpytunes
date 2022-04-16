@@ -3,8 +3,11 @@
 # libpytunes
 
 Created by Liam Kaufman (liamkaufman.com)
+Modified by Anirudh Acharya
 
-Contributions by Liam Kaufman (liamkaufman.com), Steven Miller (copart), dpchu, selftext, z4r, pschorf, Mathew Bramson (mbramson), Roger Filmyer (rfilmyer), cktse, Scot Hacker (shacker)
+This version should work in python3. You will need to install 'six' via pip.
+
+Contributions by Liam Kaufman (liamkaufman.com), Steven Miller (copart), dpchu, selftext, z4r, pschorf, Mathew Bramson (mbramson), Roger Filmyer (rfilmyer), cktse, Scot Hacker (shacker), Anirudh Acharya
 
 **Before using libpytunes it is recommended that you backup your Itunes Library XML file. Use libpytunes at your own risk - there is no guarantee that it works or will not blow-up your computer!**
 
