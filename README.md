@@ -7,6 +7,8 @@ Modified by Anirudh Acharya
 
 This version should work in python3. You will need to install 'six' via pip.
 
+NAS_iTunes_Playlists.py will read Library.xml in current directory and generate .m3u playlists in 'playlists' directory
+
 Contributions by Liam Kaufman (liamkaufman.com), Steven Miller (copart), dpchu, selftext, z4r, pschorf, Mathew Bramson (mbramson), Roger Filmyer (rfilmyer), cktse, Scot Hacker (shacker), Anirudh Acharya
 
 **Before using libpytunes it is recommended that you backup your Itunes Library XML file. Use libpytunes at your own risk - there is no guarantee that it works or will not blow-up your computer!**
