@@ -21,7 +21,7 @@ except ImportError:
 class Library:
     def __init__(self, itunesxml, musicPathXML=None, musicPathSystem=None, filesOnly=False):
         # musicPathXML and musicPathSystem will do path conversion
-        # when xml is being processed on different OS then iTunes
+        # when xml is being processed on different OS than iTunes
         self.musicPathXML = musicPathXML
         self.musicPathSystem = musicPathSystem
         self.filesOnly = filesOnly
