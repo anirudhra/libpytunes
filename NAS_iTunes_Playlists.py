@@ -1,6 +1,13 @@
 from libpytunes import Library
+import argparse
 
-l = Library("./Library.xml")
+parser = argparse.ArgumentParser(description="Generate M3U playlists from an iTunes Library XML file.")
+parser.add_argument('library', nargs='?', default='./Library.xml', help='Path to the iTunes Library XML file (default: ./Library.xml)')
+parser.add_argument('--src-prefix', default='D:/aniru/Music/iTunes/iTunes Media/Music/', help='Source music path prefix to replace (default: D:/aniru/Music/iTunes/iTunes Media/Music/)')
+parser.add_argument('--dst-prefix', default='/media/music/music/', help='Destination music path prefix (default: /media/music/music/)')
+args = parser.parse_args()
+
+l = Library(args.library)
 
 #for id, song in l.songs.items():
 #    if song and song.rating:
@@ -19,7 +26,7 @@ for playlist in playlists:
         #print("[{t}] {a} - {n}".format(t=song.track_number, a=song.artist, n=song.name))
         songpath = song.location
         songpath = songpath.replace("\\", "/")
-        songpath = songpath.replace("D:/aniru/Music/iTunes/iTunes Media/Music/", "/media/music/music/")
+        songpath = songpath.replace(args.src_prefix, args.dst_prefix)
         #f.write("# " + song.name + "\n")
         f.write(songpath + "\n")
     f.close
