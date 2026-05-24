@@ -2,8 +2,7 @@
 
 # libpytunes
 
-Created by Liam Kaufman (liamkaufman.com)
-Modified by Anirudh Acharya
+Created by Liam Kaufman (liamkaufman.com), forked/modified with further enhancements.
 
 This version should work in python3. You will need to install 'six' via pip.
 
